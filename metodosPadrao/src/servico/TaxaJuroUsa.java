@@ -2,10 +2,10 @@ package servico;
 
 import java.security.InvalidParameterException;
 
-public class TaxaJuroBrasil implements ServicoJuros{
+public class TaxaJuroUsa implements ServicoJuros{
 	private double taxaJuro;
 	
-	public TaxaJuroBrasil(double taxaJuro) {
+	public TaxaJuroUsa(double taxaJuro) {
 		this.taxaJuro = taxaJuro;	
 	}
 	
