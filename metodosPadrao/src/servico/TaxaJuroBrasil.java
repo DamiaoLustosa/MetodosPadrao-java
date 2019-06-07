@@ -1,7 +1,5 @@
 package servico;
 
-import java.security.InvalidParameterException;
-
 public class TaxaJuroBrasil implements ServicoJuros{
 	private double taxaJuro;
 	
@@ -14,15 +12,6 @@ public class TaxaJuroBrasil implements ServicoJuros{
 		return taxaJuro;
 	}
 	
-	@Override
-	public double pagamento(double montante, int mes) {
-		if (mes <1) {
-			throw new InvalidParameterException("Meses devem ser maiores que zero");
-		}
-		return montante * Math.pow(1.0 + taxaJuro / 100, mes); //método Math.pow realiza uma potenciação	
-	}
-	
-	
-	
+
 
 }
